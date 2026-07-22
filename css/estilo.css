@@ -38,7 +38,7 @@ main{
     justify-content: space-evenly;
 }
 .padre-card{
-    width: 100%;
+    width: 600px;
     height: 350px;
     border: 2px solid rgb(241, 134, 241);
     display: flex;
@@ -47,6 +47,7 @@ main{
     align-items: center;
     gap: 50px;
     flex-wrap: wrap;
+    background-color: rgb(133, 200, 202);
 }
 .card{
     width: 100px;
@@ -56,4 +57,16 @@ main{
     background-color: var(--color-secundario);
     margin: 5px;
     gap: 30px;
+}
+@media (max-width: 625px) {
+    .padre-card{
+    width: 400px;
+    background-color: rgb(248, 145, 145);
+    }
+}
+@media (max-width: 400px) {
+    .padre-card{
+    width: 100%;
+    background-color: rgb(190, 145, 248);
+    }
 }
